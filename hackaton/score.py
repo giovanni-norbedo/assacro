@@ -147,6 +147,10 @@ elif(sys.argv[1]=="balance"):
         print(dfv)
         print(dfs)
         print(dfA)
+
+        dfs.to_csv("shipments_errors.csv")
+        dfA.to_csv("errors1.csv")
+
 else:
     productionCost = pd.read_csv( sys.argv[4])
     shipmentsCost = pd.read_csv( sys.argv[5])
@@ -166,4 +170,5 @@ else:
         print(dfv)
         print(dfs)
         print(dfA)
+
 
